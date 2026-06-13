@@ -2,7 +2,7 @@ import math
 
 def run_climate_var_simulation():
  print("\n======================================================================")
- print("🏛️ MFIN QUANT LAB: CLIMATE-RISK MONTE CARLO STOCHASTIC SIMULATION")
+ print("MFIN QUANT LAB: CLIMATE-RISK MONTE CARLO STOCHASTIC SIMULATION")
  print("Asset Framework: Clean Energy Index vs. Carbon-Tax Stressed Portfolio")
  print("======================================================================\n")
 
@@ -16,8 +16,8 @@ def run_climate_var_simulation():
 # Policy Shock Parameter: If a carbon tax hits, it causes a structural asset drop
  carbon_tax_shock_impact = -0.08 # Sudden 8% regulatory markdown on assets
 
- print(f"🎲 Initializing Monte Carlo Engine: Running {number_of_simulations} stochastic paths...")
- print(f"💼 Baseline Portfolio Capital Base: ${initial_portfolio_value:,.2f}")
+ print(f"Initializing Monte Carlo Engine: Running {number_of_simulations} stochastic paths...")
+ print(f"Baseline Portfolio Capital Base: ${initial_portfolio_value:,.2f}")
  print("-" * 70)
 
 # Simulated deterministic sequence to mimic random Gaussian shocks across paths
