@@ -1,10 +1,10 @@
 import math
 
 def run_climate_var_simulation():
- print("\n======================================================================")
- print("MFIN QUANT LAB: CLIMATE-RISK MONTE CARLO STOCHASTIC SIMULATION")
+ 
+ print("CLIMATE-RISK MONTE CARLO STOCHASTIC SIMULATION")
  print("Asset Framework: Clean Energy Index vs. Carbon-Tax Stressed Portfolio")
- print("======================================================================\n")
+
 
 # 1. Base Parameters (Institutional Setup)
  initial_portfolio_value = 10000000 # $10 Million institutional fund
@@ -59,20 +59,20 @@ def run_climate_var_simulation():
  maximum_loss_stressed = initial_portfolio_value - var_cutoff_stressed
 
 # 4. Generate Institutional Risk Report
- print("\n======================= QUANT RISK REPORT =======================")
+ print("QUANT RISK REPORT")
  print(f"Confidence Interval Threshold: 95.0%")
  print(f"Simulation Horizon Scope: {days_to_simulate} Trading Days")
- print("-----------------------------------------------------------------")
+ 
  print("BASELINE SPECIFICATIONS (Normal Markets):")
  print(f" Value at Risk (95% VaR Boundary): ${var_cutoff_baseline:,.2f}")
  print(f" Maximum Expected Capital Loss: ${maximum_loss_baseline:,.2f}")
- print("-----------------------------------------------------------------")
+ 
  print("CLIMATE SHOCK SPECIFICATIONS (Carbon Tax Applied):")
  print(f" Value at Risk (95% VaR Boundary): ${var_cutoff_stressed:,.2f}")
  print(f" Maximum Expected Capital Loss: ${maximum_loss_stressed:,.2f}")
- print("=================================================================")
+ 
  print(f"Delta Risk Exposure: Regulatory carbon policy increases maximum")
  print(f" portfolio capital loss risk exposure by ${maximum_loss_stressed - maximum_loss_baseline:,.2f} over a 10-day horizon.")
- print("=================================================================\n")
+ 
 
 run_climate_var_simulation()
